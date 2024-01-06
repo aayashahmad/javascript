@@ -24,32 +24,33 @@
     </style>
 </head>
 <body>
-    <h1>Array Methods Example</h1>
+
+    <!-- <h1>Array Methods Example</h1>
     <button onclick="performArrayOperations()">Perform Array Operations</button>
-    <div id="output"></div>
+    <div id="output"></div> -->
 
-    <script>
-        function performArrayOperations() {
-            // Sample array
-            const numbers = [1, 2, 3, 4, 5];
+    <script src="basic.js">
+        // function performArrayOperations() {
+        //     // Sample array
+        //     const numbers = [1, 2, 3, 4, 5];
 
-            // Map: Multiply each element by 2
-            const mappedArray = numbers.map(num => num * 2);
+        //     // Map: Multiply each element by 2
+        //     const mappedArray = numbers.map(num => num * 2);
 
-            // Filter: Keep only even numbers
-            const filteredArray = numbers.filter(num => num % 2 === 0);
+        //     // Filter: Keep only even numbers
+        //     const filteredArray = numbers.filter(num => num % 2 === 0);
 
-            // // Reduce: Sum of all elements
-            // const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        //     // // Reduce: Sum of all elements
+        //     // const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-            // Display results on the page
-            document.getElementById('output').innerHTML = `
-                <p>Original Array: ${numbers.join(', ')}</p>
-                <p>Mapped Array (x2): ${mappedArray.join(', ')}</p>
-                <p>Filtered Array (Even Numbers): ${filteredArray.join(', ')}</p>
-                <p>Sum of Array Elements: ${sum}</p>
-            `;
-        }
+        //     // Display results on the page
+        //     document.getElementById('output').innerHTML = `
+        //         <p>Original Array: ${numbers.join(', ')}</p>
+        //         <p>Mapped Array (x2): ${mappedArray.join(', ')}</p>
+        //         <p>Filtered Array (Even Numbers): ${filteredArray.join(', ')}</p>
+        //         <p>Sum of Array Elements: ${sum}</p>
+        //     `;
+        // }
     </script>
 </body>
 </html>
