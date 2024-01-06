@@ -11,8 +11,17 @@ let std = {
     gender:"male",
     isFollow: true,
 }
+//This code uses a for...in loop to iterate over all the 
+// properties of the std object.
+//  Inside the loop, ${key}: ${std[key]}
+//   prints the property name followed by its value.
 
-for (let key in std) {
+// Keep in mind that the order of properties in the output is not 
+// guaranteed to be in the same order they were 
+// defined in the object literal. 
+// If you need a specific order,
+//  you may want to use an array of property names in a desired order.
+for (let key in std) {  
     console.log(`${key}: ${std[key]}`);
 }
 
