@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Methods Example</h1>
+    <button onclick="performArrayOperations()">Perform Array Operations</button>
+    <div id="output"></div>
+
+    <script>
+        function performArrayOperations() {
+            // Sample array
+            const numbers = [1, 2, 3, 4, 5];
+
+            // Map: Multiply each element by 2
+            const mappedArray = numbers.map(num => num * 2);
+
+            // Filter: Keep only even numbers
+            const filteredArray = numbers.filter(num => num % 2 === 0);
+
+            // // Reduce: Sum of all elements
+            // const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+            // Display results on the page
+            document.getElementById('output').innerHTML = `
+                <p>Original Array: ${numbers.join(', ')}</p>
+                <p>Mapped Array (x2): ${mappedArray.join(', ')}</p>
+                <p>Filtered Array (Even Numbers): ${filteredArray.join(', ')}</p>
+                <p>Sum of Array Elements: ${sum}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
