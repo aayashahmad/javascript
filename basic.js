@@ -13,7 +13,7 @@ let std = {
 }
 std["age"]=std["age"]+1;
 std["fullName"]=std["fullName"]="aqib";
-console.log(std);
+// console.log(std);
 //This code uses a for...in loop to iterate over all the 
 // properties of the std object.
 //  Inside the loop, ${key}: ${std[key]}
@@ -25,17 +25,17 @@ console.log(std);
 // If you need a specific order,
 //  you may want to use an array of property names in a desired order.
 for (let key in std) {  
-    console.log("key=",key, "values=",std[key]);
+    // console.log("key=",key, "values=",std[key]);
 }
 
 // Using Object.values to get an array of property values
 let values = Object.values(std);
 
 // Printing the array of values
-console.log("obj method+++",values);
+// console.log("obj method+++",values);
       //init... condito.. updaT....
  for(let i=1; i<=100; i++){
-  console.log("agib")
+//   console.log("agib")
  }
   // FOR OF, FOR IN
   // FOR OF -> STRING "ASHU" -> A,S,H,U
@@ -86,7 +86,7 @@ let result =age<=18?"bacha":"men";
 //     console.log("invalid age");
 // }
 
-console.log(result)
+// console.log(result)
 //string  ->immutable
 let str ="hellolllcvsdvksdvlllscvshlll";
 // let agee =23;
@@ -95,4 +95,50 @@ let str ="hellolllcvsdvksdvlllscvshlll";
 //slice (str, end->not included..)
 //replace chng->str -val replaceAll(selected val,chg-> newval)
 // console.log(str.replaceAll("l","a"))
-console.log(str)
+// console.log(str)
+
+// array topic str////////////////////////////////////////////////////////////
+
+// let arr=[10,20,"hello",40,["ashu"]];
+// let arr = ["ashu","aqib","amir"];
+// let arr2 = [13,54,75];
+//  for (let val of arr){
+//  console.log("arrayyyy",val)
+//  }
+// for(let i=0; i<arr.length;i++ ){
+//     // console.log(`index :${i}, value :${arr[i]}`);
+//     console.log(arr[i]);
+// }
+// console.log("arrayyyy",arr)
+//array methods
+//push add on last
+// let arr2 = [13,54,75];
+// console.log(arr2)
+// arr2.push(99);
+// console.log(arr2)
+//pop delete at last
+// let arr2 = [13,54,75];
+// console.log(arr2)
+// arr2.pop();
+// console.log(arr2)
+//shift delete first element
+//unshift add first element
+//tostring
+// let arr = ["ashu","aqib","amir"];
+// console.log(arr.toString());//covert into string
+//CONCAT
+// let arr = ["ashu","aqib","amir"];
+// let arr2 = ["apple","box","bmw"];
+// console.log(arr.concat(arr2));//join two arrays
+// let r = arr.concat(arr2);
+// console.log("arrrrrrr",r)
+//SLICE
+let arr3 = [33,66,77,99,0];
+// console.log(arr.slice(1,2))//start from index 1 to end NOT INCL....
+//SPLICE
+let r = arr3.splice(1,1,22)
+console.log("del ",r);//splice(stridx,delindx,addidx)
+//add  item at index 3 = splice(3,0,88)
+//delete item at index 3 = splice(3,1)
+//replace item at idx 1 = splice(1,0,66)
+console.log(arr3);
