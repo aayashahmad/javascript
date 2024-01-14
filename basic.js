@@ -142,3 +142,30 @@ console.log("del ",r);//splice(stridx,delindx,addidx)
 //delete item at index 3 = splice(3,1)
 //replace item at idx 1 = splice(1,0,66)
 console.log(arr3);
+
+//sytax
+// function aqib(){
+//   console.log("named function")
+// }
+
+// let anonfunc = function(){
+//     console.log("anonymous function")
+// }
+
+// let arrofun = () =>{     
+//     console.log("arrow func");
+// }
+
+// foreach()
+let arr = [1,2,3,4,5, "ashu"];
+// arr.forEach((val,idx,arr)=>{
+//     console.log(`value ${val} is in the position ${idx}`);
+// })
+
+// let newarr=arr.map((item)=>{
+//     return item*10;   
+// })
+// console.log(newarr)
+//filter 
+let newarr = arr.filter(item => item === "ashu");
+console.log(newarr)
