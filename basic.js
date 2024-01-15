@@ -157,7 +157,7 @@ console.log(arr3);
 // }
 
 // foreach()
-let arr = [1,2,3,4,5, "ashu"];
+// let arr = [1,2,3,4,5, "ashu"];
 // arr.forEach((val,idx,arr)=>{
 //     console.log(`value ${val} is in the position ${idx}`);
 // })
@@ -167,5 +167,31 @@ let arr = [1,2,3,4,5, "ashu"];
 // })
 // console.log(newarr)
 //filter 
-let newarr = arr.filter(item => item === "ashu");
-console.log(newarr)
+// let newarr = arr.filter(item => item === "ashu");
+// console.log(newarr)
+// const books = [
+//     {
+//         title: "book1",
+//         author: "JD Salinger",
+//         pages: 200,
+//         publishYear: 1951
+//     },
+//     {
+//         title: "book2",
+//         author: "Another Author",
+//         pages: 250,
+//         publishYear: 2028
+//     },
+//     {
+//         title: "book3",
+//         author: "Another Author",
+//         pages: 250,
+//         publishYear: 2027
+//     }
+// ];
+// let bookAuthor = books.filter(book => book.publishYear <= 2000);
+// console.log(bookAuthor);
+// let arr2 = [1, 2, 3, 4];
+// const initialValue = 0;
+// const sumVal = arr2.reduce((accumulator, currVal) => accumulator + currVal, initialValue);
+// console.log(sumVal);
