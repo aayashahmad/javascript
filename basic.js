@@ -195,3 +195,18 @@ console.log(arr3);
 // const initialValue = 0;
 // const sumVal = arr2.reduce((accumulator, currVal) => accumulator + currVal, initialValue);
 // console.log(sumVal);
+
+
+// let title = document.getElementById("tile")
+// console.log(title)
+
+let d= document.querySelector(".desc")
+console.log(d)
+function bk(){
+    document.body.style.background="black"
+    document.body.style.color="white"
+}
+function wt(){
+    document.body.style.background="white"
+    document.body.style.color="black"
+}
