@@ -200,13 +200,36 @@ console.log(arr3);
 // let title = document.getElementById("tile")
 // console.log(title)
 
-let d= document.querySelector(".desc")
-console.log(d)
-function bk(){
-    document.body.style.background="black"
-    document.body.style.color="white"
-}
-function wt(){
-    document.body.style.background="white"
-    document.body.style.color="black"
-}
+// let d= document.querySelector(".desc")
+// console.log(d)
+// function bk(){
+//     document.body.style.background="black"
+//     document.body.style.color="white"
+// }
+// function wt(){
+//     document.body.style.background="white"
+//     document.body.style.color="black"
+// }
+// let para = document.querySelector("p")
+// let clx = para.getAttribute("desc")
+// console.log(para);
+
+//set attribute(attribute,newVal)]
+// let para = document.querySelector("p")
+// console.log(para.setAttribute("desc","newCl"))
+let newbtn = document.createElement("button");
+newbtn.innerHTML ="click me";
+console.log(newbtn)
+// document.body.appendChild(newbtn);
+ let para = document.querySelector("p")
+ console.log(para)
+ para.after(newbtn)
+ // append(insideContent), prepend(insideContent),before(outside),after(outside)
+ let headline = document.createElement("h1");
+ headline.innerHTML = "<i>This is a subheading</i>";
+ console.log(headline)
+ let hd =document.querySelector(".para1");
+ hd.before(headline)
+ headline.remove();
+ para.classList.add("para2")
+// para.setAttribute("class","para2")
