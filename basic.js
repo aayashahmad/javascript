@@ -217,19 +217,83 @@ console.log(arr3);
 //set attribute(attribute,newVal)]
 // let para = document.querySelector("p")
 // console.log(para.setAttribute("desc","newCl"))
-let newbtn = document.createElement("button");
-newbtn.innerHTML ="click me";
-console.log(newbtn)
-// document.body.appendChild(newbtn);
- let para = document.querySelector("p")
- console.log(para)
- para.after(newbtn)
+// let newbtn = document.createElement("button");
+// newbtn.innerHTML ="click me";
+// console.log(newbtn)
+// // document.body.appendChild(newbtn);
+//  let para = document.querySelector("p")
+//  console.log(para)
+//  para.after(newbtn)
  // append(insideContent), prepend(insideContent),before(outside),after(outside)
- let headline = document.createElement("h1");
- headline.innerHTML = "<i>This is a subheading</i>";
- console.log(headline)
- let hd =document.querySelector(".para1");
- hd.before(headline)
- headline.remove();
- para.classList.add("para2")
+//  let headline = document.createElement("h1");
+//  headline.innerHTML = "<i>This is a subheading</i>";
+//  console.log(headline)
+//  let hd =document.querySelector(".para1");
+//  hd.before(headline)
+//  headline.remove();
+//  para.classList.add("para2")
 // para.setAttribute("class","para2")
+// let btn = document.querySelector("#clk");
+// btn.onclick=(evt)=>{
+//     console.log(evt.type)
+// }
+//node.addevebntlister(evt,callback)
+// btn.addEventListener("click",()=>{
+//     console.log("clkd 1")
+// })
+// btn.addEventListener("click",()=>{
+//     console.log("clkd 2")
+// })
+//  let crrmd= "light"
+// btn.addEventListener("dblclick",()=>{
+//     if (crrmd === "light"){
+//         crrmd= "dark";
+//         document.body.style.backgroundColor="darkblue"
+//     }else{ 
+//         crrmd= "light";
+//         document.body.style.backgroundColor="white"  
+//     }
+//  console.log(crrmd)
+// })
+// const std3 = {
+//     name : "ashu",
+// }
+// console.log(std3)
+
+// const empy ={
+//     caltax(){
+//         console.log("10% tax")
+//     }
+// }
+
+// const user ={
+//     salary : 20000,
+   
+// }
+// user.__proto__ = empy;
+
+// console.log(user.caltax())
+
+// class toyotaCar{
+//     constructor( ){
+//         console.log(" new object")
+//         this.model = "car1"  
+//     }
+//     start(){
+//         console.log("car start")
+//     }
+//     stop(){
+//         console.log("car stop")
+//     }
+// }
+// class superCar extends toyotaCar{
+//     constructor(model ){
+//         console.log(" new object2")
+//         super();
+//         this.model = model   
+//         console.log("exit object2")
+//     }
+
+// }
+// let car = new superCar("car2");
+// console.log(car)
