@@ -297,3 +297,79 @@ console.log(arr3);
 // }
 // let car = new superCar("car2");
 // console.log(car)
+//error handling
+// try catch -> block
+
+// try {
+//     // code that might cause an error
+// } catch(err){
+//     // handle the error
+// }
+
+// let a = 5;
+// let b = 10;
+// console.log(a+b);
+// console.log(a*b);
+// // try{
+// //     console.log(a-b+c)
+// // }catch(err){
+// //     console.log(`Error: ${err}`);
+// // }
+// ;//error
+// console.log(a+b);
+// console.log(a+b);
+// function hello(){
+//     console.log("hello")
+// }
+// setTimeout(()=>{
+//  console.log("hello")
+// },2000);
+
+//callback
+// function sum (a,b){
+//     console.log(a+b)
+// }
+// function calculator(a,b,sum){
+//     sum(a,b)
+// }
+// calculator(1,2,sum);
+
+//call back hell
+// function data(id,nextP){
+//     console.log("id", id)
+//     setTimeout(()=>{
+//        if(nextP){
+//         nextP()
+//        }
+//     },4000)
+// }
+// // data(1);
+// // data(2);
+// // data(3);
+// data(1,()=>{
+//   data(2,()=>{
+//     data(3)
+//   })
+// });
+
+
+//promisze
+// let promise = new Promise((resolve,reject)=>{
+//     console.log("im a promise")
+//     // resolve('done');
+//     reject('error +++')
+// });
+ function data(id,dataP){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("id",id)
+        resolve("done")
+        if(dataP){
+            dataP();
+        }
+    },2000)
+});
+
+ }
+ let r4 = data(24525);
+ console.log(r4)
