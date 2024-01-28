@@ -359,17 +359,44 @@ console.log(arr3);
 //     // resolve('done');
 //     reject('error +++')
 // });
- function data(id,dataP){
-    return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        console.log("id",id)
-        resolve("done")
-        if(dataP){
-            dataP();
-        }
-    },2000)
-});
+//  function data(id,dataP){
+//     return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("id",id)
+//         resolve("done")
+//         if(dataP){
+//             dataP();
+//         }
+//     },2000)
+// });
 
- }
- let r4 = data(24525);
- console.log(r4)
+//  }
+//  let r4 = data(24525);
+//  console.log(r4)
+
+
+function sum(a,b){
+    console.log(`sum of ${a} and ${b} is :`,a + b)
+}
+function sub(a,b){
+    console.log(`sub of ${a} and ${b} is :`,a - b)
+}
+function mul(a,b){
+    console.log(`mul of ${a} and ${b} is :`,a * b)
+}
+function calculate(a, b, sum, sub, mul){
+    sum (a,b)
+    sub (a, b)
+    mul (a,b)
+}
+calculate(5,2,sum, sub, mul)
+
+// function greet() {
+//     console.log("Hello greet function");
+// }
+
+// function display(greet) {
+//     greet();
+// }
+
+// display(greet);
