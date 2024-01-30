@@ -375,21 +375,21 @@ console.log(arr3);
 //  console.log(r4)
 
 
-function sum(a,b){
-    console.log(`sum of ${a} and ${b} is :`,a + b)
-}
-function sub(a,b){
-    console.log(`sub of ${a} and ${b} is :`,a - b)
-}
-function mul(a,b){
-    console.log(`mul of ${a} and ${b} is :`,a * b)
-}
-function calculate(a, b, sum, sub, mul){
-    sum (a,b)
-    sub (a, b)
-    mul (a,b)
-}
-calculate(5,2,sum, sub, mul)
+// function sum(a,b){
+//     console.log(`sum of ${a} and ${b} is :`,a + b)
+// }
+// function sub(a,b){
+//     console.log(`sub of ${a} and ${b} is :`,a - b)
+// }
+// function mul(a,b){
+//     console.log(`mul of ${a} and ${b} is :`,a * b)
+// }
+// function calculate(a, b, sum, sub, mul){
+//     sum (a,b)
+//     sub (a, b)
+//     mul (a,b)
+// }
+// calculate(5,2,sum, sub, mul)
 
 // function greet() {
 //     console.log("Hello greet function");
@@ -400,3 +400,58 @@ calculate(5,2,sum, sub, mul)
 // }
 
 // display(greet);
+
+
+// const gtpromise = ()=>{
+//     return new Promise((resolve,reject)=>{
+//         console.log("im a promise")
+//         reject("done")
+// }
+// )};
+// // gtpromise().then(data =>console.log(data));
+// let promise = gtpromise();
+// promise.then(data => console.log(data))
+// promise.catch(Error => console.log(Error))
+
+//async-await
+// function api(){
+//  console.log("async-await")
+// }
+// async function gtdata(){
+//    await api();  
+// // }
+
+// let data = gtdata();
+// function  data (id){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("id",id)
+//             resolve("200")
+//         },3000)
+       
+// }
+// )};
+// async function gtdata() {
+//     console.log("getting data 1")
+//     await data(123)
+//     console.log("getting data 2")
+//     await data(1234)
+//     console.log("getting data 3")
+//     await data(12345)
+// }
+// gtdata();
+//fatch api
+// let  promise = fetch(url,[option])
+// const facts= async()=>{
+//     let promise = await fetch("https://cat-fact.herokuapp.com")
+//     console.log(promise)
+// }
+const facts = async () => {
+  
+        let response = await fetch("https://cat-fact.herokuapp.com/facts/random");
+        // let data = await response.json();
+        console.log(response);
+  
+};
+
+facts();
