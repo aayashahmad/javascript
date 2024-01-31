@@ -446,12 +446,18 @@ console.log(arr3);
 //     let promise = await fetch("https://cat-fact.herokuapp.com")
 //     console.log(promise)
 // }
+const para =  document.querySelector(".para1");
+const btn =  document.querySelector("#clk");
+const date = document.querySelector("#data");
 const facts = async () => {
   
         let response = await fetch("https://cat-fact.herokuapp.com/facts/random");
-        // let data = await response.json();
-        console.log(response);
-  
+        let data = await response.json();
+        para.innerText = data.text
+       
+      
+        
 };
+btn.addEventListener('click', facts);
 
 facts();
