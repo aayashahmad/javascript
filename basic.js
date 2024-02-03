@@ -446,6 +446,7 @@ console.log(arr3);
 //     let promise = await fetch("https://cat-fact.herokuapp.com")
 //     console.log(promise)
 // }
+
 const para =  document.querySelector(".para1");
 const btn =  document.querySelector("#clk");
 const date = document.querySelector("#data");
@@ -453,11 +454,48 @@ const facts = async () => {
   
         let response = await fetch("https://cat-fact.herokuapp.com/facts/random");
         let data = await response.json();
-        para.innerText = data.text
-       
-      
-        
+        para.innerText = data.text       
 };
 btn.addEventListener('click', facts);
+setInterval(()=>{
+    facts()
+},3000)
 
-facts();
+    
+
+    
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const imageElement = document.getElementById('image');
+        const changeButton = document.getElementById('changeButton');
+    
+        // Function to fetch random image URL from an API
+        async function fetchRandomImageUrl() {
+            try {
+                const response = await fetch('https://random.imagecdn.app/500/250');
+                return response.url; // Return the URL of the image directly
+            } catch (error) {
+                console.error('Error fetching image:', error);
+                return null;
+            }
+        }
+    
+        // Function to change the picture
+        async function changePicture() {
+            const imageUrl = await fetchRandomImageUrl();
+            if (imageUrl) {
+                imageElement.src = imageUrl;
+            } else {
+                // Handle error or display default image
+                console.error('Failed to fetch image. Displaying default image.');
+                imageElement.src = 'default.jpg';
+            }
+        }
+        // Add event listener to the button to call the changePicture function when clicked
+        changeButton.addEventListener('click', changePicture);
+        setInterval(()=>{
+            changePicture()
+        },1000)
+      
+    });
+  
